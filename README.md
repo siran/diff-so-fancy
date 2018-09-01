@@ -23,6 +23,8 @@ Configure git to use `diff-so-fancy` for all diff output:
 git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
 ```
 
+NOTE: IN case of issues, make sure yo don't have an environment variable named GIT_PAGER. If you do, you can do `unset GIT_PAGER` (also you must remove this variable from being set, most probably in your `~/.bashrc`)
+
 ### Improved colors for the highlighted bits
 
 The default Git colors are not optimal. We suggest the following colors instead.
